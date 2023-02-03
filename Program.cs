@@ -34,6 +34,8 @@ namespace TodoAPI
             app.MapControllers();
 
             app.Run();
+
+            Console.WriteLine("This resolve Issue #1");
         }
     }
 }
