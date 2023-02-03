@@ -8,5 +8,10 @@ namespace TodoAPI.Models
         public TodoContext(DbContextOptions<TodoContext> options) : base(options) { }
 
         public DbSet<TodoItem> TodoItems { get; set; }
+
+        internal void SaveChanges()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
