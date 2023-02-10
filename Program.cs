@@ -8,6 +8,9 @@ namespace TodoAPI
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+	    
+
+	    // Fixing Swagger here
 
             // Add services to the container.
             builder.Services.AddDbContext<TodoContext>(opt => opt.UseInMemoryDatabase("TodoList"));
